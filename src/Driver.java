@@ -1,5 +1,4 @@
-package Monster;
-
+import Monsters.*;
 import java.util.*;
 
 public class Driver {
@@ -10,8 +9,12 @@ public class Driver {
         monsters.add(new Imp(15, 20, items));
         monsters.add(new Kobold(1, 5, items));
 
-        for (Monster m: monsters) {
+        for (Monster m : monsters) {
             System.out.println(m);
         }
+
+        System.out.println(monsters.get(0).attackTarget(monsters.get(1)));
+        System.out.println(monsters.get(1).attackTarget(monsters.get(0)));
+
     }
 }

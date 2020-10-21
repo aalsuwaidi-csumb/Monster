@@ -1,8 +1,8 @@
 package Abilities;
 
-import Monster.Monster;
+import Monsters.Monster;
 
-public class RangedAttack implements Attack{
+public class RangedAttack implements Attack {
 
     Monster attacker;
 
@@ -12,8 +12,8 @@ public class RangedAttack implements Attack{
 
     @Override
     public Integer attack(Monster target) {
-        String message = attacker + " uses a ranged attack on " + target;
+        String message = attacker + " uses a ranged attack on  " + target;
         System.out.println(message);
-        return null;
+        return attacker.getAgi() - target.getAgi();
     }
 }
