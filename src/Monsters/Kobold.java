@@ -6,6 +6,7 @@ public class Kobold extends Monster {
 
     public Kobold(Integer maxHP, Integer xp, HashMap<String, Integer> items){
         super(maxHP,xp,items);
+        
         Integer maxStr = 15;
         Integer maxDef = 6;
         Integer maxAgi = 3;

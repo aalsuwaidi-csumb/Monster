@@ -11,7 +11,7 @@ public abstract class Monster {
     Integer def = 5;
     Integer str = 5;
     Attack attack;
-    private Integer maxHP = null;
+    private Integer maxHP;
     private HashMap<String,Integer> items;
 
     public Monster(Integer maxHP, Integer xp, HashMap<String, Integer> items) {
@@ -27,6 +27,10 @@ public abstract class Monster {
 
     public Integer getHp() {
         return hp;
+    }
+
+    public void setHp(Integer hp) {
+        this.hp = hp;
     }
 
     public Integer getXp() {
