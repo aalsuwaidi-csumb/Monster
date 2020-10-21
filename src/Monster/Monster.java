@@ -1,3 +1,5 @@
+package Monster;
+
 import java.util.*;
 
 public abstract class Monster {
